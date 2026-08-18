@@ -9,7 +9,7 @@ void main() {
     scanf("%f", &b);
     if(a>b)
         printf("The first number is the largest number and the second number is the smallest number.");
-    if(b<a)
+    else if(b<a)
         printf("The second number is the largest number and the first number is the smallest number.");
     else
          printf("Both the numbers are Equal none of them is largest and smallest of two numbers.");
