@@ -1,31 +1,20 @@
-
+#include <stdio.h>
 
 int main(){
-    int i,c,n,s,d[100],a,j;
+    int i,c,n,s,d,a,j;
     printf("Enter the number : ");
     scanf("%d",&n);
     a = n;
-    for(i=0;i<100;i++){
+    c=0;
+    while(n>0){
+        d=n%10;
+        c = (c*10) + d; // revesing th number
         n/=10;
-        c++;
-        if(n==0){
-            break;
-        }
     }
-    c = j;
-    s=0;
-   
-        for(i=0;i<c;i++){
-            d[i]=a%10;
-            a/=10;
-    }
-    for(i=0;i<c;i++){
-        s++;
-           if(d[i-1]==d[c-s]){
-                printf("Its a palidrom number.");
+    if(a==c){
+        printf("It's a palindrome number.\n");
     } else{
-        printf("Its not a palindrom number.");
+        printf("It is not a palindrom number.\n");
     }
-    }
-    
+    return 0;
     }
