@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    printf("Prime numbers between 1 and 500:\n");
+    int sum = 0;
+    int count = 0;
 
     for (int i = 1; i <= 500; i++) {
         int prime = 1;
@@ -18,10 +19,11 @@ int main() {
         }
 
         if (prime == 1) {
-            printf("%d ", i);
+            sum += i;
         }
     }
 
-    printf("\n");
+    printf("Summation of prime numbers: %d\n", sum);
+
     return 0;
 }
